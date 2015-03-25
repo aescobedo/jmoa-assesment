@@ -1,0 +1,948 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BV_HighToLow" xml:space="preserve">
+    <value>BV: Highest to Lowest</value>
+    <comment>ProductList</comment>
+  </data>
+  <data name="BV_LowToHigh" xml:space="preserve">
+    <value>BV: Lowest to Highest</value>
+    <comment>ProductList</comment>
+  </data>
+  <data name="Choose" xml:space="preserve">
+    <value>Choose</value>
+  </data>
+  <data name="CV_HighToLow" xml:space="preserve">
+    <value>CV: Highest to Lowest</value>
+    <comment>ProductList</comment>
+  </data>
+  <data name="CV_LowToHigh" xml:space="preserve">
+    <value>CV: Lowest to Highest</value>
+    <comment>ProductList</comment>
+  </data>
+  <data name="ItemsOf" xml:space="preserve">
+    <value>Items {0}-{1} of</value>
+    <comment>ProductList</comment>
+  </data>
+  <data name="NoItemsToDisplay" xml:space="preserve">
+    <value>No items to display.</value>
+    <comment>ProductList</comment>
+  </data>
+  <data name="PerPage" xml:space="preserve">
+    <value>per page</value>
+    <comment>ProductList</comment>
+  </data>
+  <data name="Price_HighToLow" xml:space="preserve">
+    <value>Price: Highest to Lowest</value>
+    <comment>ProductList</comment>
+  </data>
+  <data name="Price_LowToHigh" xml:space="preserve">
+    <value>Price: Lowest to Highest</value>
+    <comment>ProductList</comment>
+  </data>
+  <data name="ProductsFound" xml:space="preserve">
+    <value>product(s) found</value>
+    <comment>ProductList</comment>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>Show</value>
+    <comment>ProductList</comment>
+  </data>
+  <data name="SortBy" xml:space="preserve">
+    <value>Sort By</value>
+    <comment>ProductList</comment>
+  </data>
+  <data name="ViewDetails" xml:space="preserve">
+    <value>View Details</value>
+    <comment>ProductList</comment>
+  </data>
+  <data name="AddToCart" xml:space="preserve">
+    <value>Add to Cart</value>
+    <comment>ProductList/ProductDetail</comment>
+  </data>
+  <data name="AllProducts" xml:space="preserve">
+    <value>All Products</value>
+    <comment>ProductDetail</comment>
+  </data>
+  <data name="BV" xml:space="preserve">
+    <value>BV</value>
+  </data>
+  <data name="BVEach" xml:space="preserve">
+    <value>BV/each</value>
+    <comment>ProductDetail</comment>
+  </data>
+  <data name="Checkout" xml:space="preserve">
+    <value>Checkout</value>
+    <comment>ShoppingCart</comment>
+  </data>
+  <data name="ChooseA" xml:space="preserve">
+    <value>Choose a </value>
+    <comment>ProductList</comment>
+  </data>
+  <data name="ContinueShopping" xml:space="preserve">
+    <value>Continue Shopping</value>
+    <comment>ShoppingCart</comment>
+  </data>
+  <data name="CV" xml:space="preserve">
+    <value>CV</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Item" xml:space="preserve">
+    <value>Item</value>
+    <comment>ShoppingCart</comment>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+    <comment>ProductList</comment>
+  </data>
+  <data name="Orders" xml:space="preserve">
+    <value>Orders</value>
+    <comment>ProductList</comment>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Previous</value>
+    <comment>ProductList</comment>
+  </data>
+  <data name="PriceEach" xml:space="preserve">
+    <value>Price/ea.</value>
+    <comment>Shopping Cart</comment>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="RemoveFromCart" xml:space="preserve">
+    <value>Remove '{0}' from your cart</value>
+    <comment>ShoppingCart</comment>
+  </data>
+  <data name="ReviewYourAvailableProducts_Shopping" xml:space="preserve">
+    <value>Review your available products and add any desired items to your cart. To read more
+                about a product, click on it's image or title.</value>
+    <comment>ProductDetail</comment>
+  </data>
+  <data name="SelectAShippingAddress" xml:space="preserve">
+    <value>Select a shipping address</value>
+  </data>
+  <data name="ShipToThisAddress" xml:space="preserve">
+    <value>Ship to this address</value>
+    <comment>Checkout Shipping</comment>
+  </data>
+  <data name="SKU" xml:space="preserve">
+    <value>SKU</value>
+    <comment>ProductDetail</comment>
+  </data>
+  <data name="Subtotal" xml:space="preserve">
+    <value>Subtotal</value>
+    <comment>ShoppingCart</comment>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="UpdateCart" xml:space="preserve">
+    <value>Update Cart</value>
+    <comment>ShoppingCart</comment>
+  </data>
+  <data name="ViewAll" xml:space="preserve">
+    <value>View All</value>
+    <comment>ProductNavigation</comment>
+  </data>
+  <data name="YourPrice" xml:space="preserve">
+    <value>Your Price</value>
+  </data>
+  <data name="YourShoppingCartIsEmpty" xml:space="preserve">
+    <value>Your shopping cart is empty.</value>
+    <comment>ShoppingCart</comment>
+  </data>
+  <data name="Annual" xml:space="preserve">
+    <value>Annual</value>
+    <comment>Autoship List</comment>
+  </data>
+  <data name="ApartmentSuiteNumber" xml:space="preserve">
+    <value>Apartment/suite number</value>
+  </data>
+  <data name="Autoship" xml:space="preserve">
+    <value>Autoship</value>
+  </data>
+  <data name="AutoshipBillDate_formatted" xml:space="preserve">
+    <value>You will be billed for this autoship {0} starting on {1}.</value>
+  </data>
+  <data name="AutoshipCartEmpty" xml:space="preserve">
+    <value>Your autoship cart is empty.</value>
+    <comment>Autoship Cart</comment>
+  </data>
+  <data name="AutoshipDetails" xml:space="preserve">
+    <value>Autoship Details</value>
+    <comment>Autoship Checkout Review</comment>
+  </data>
+  <data name="AutoshipNumber" xml:space="preserve">
+    <value>Autoship #</value>
+    <comment>Autoship Invoice</comment>
+  </data>
+  <data name="Autoships" xml:space="preserve">
+    <value>Autoships</value>
+  </data>
+  <data name="AutoshipSaved" xml:space="preserve">
+    <value>Your autoship has been saved.</value>
+    <comment>Autoship Checkout Complete</comment>
+  </data>
+  <data name="AutoshipSummary" xml:space="preserve">
+    <value>Autoship Summary</value>
+    <comment>Autoship Checkout Review</comment>
+  </data>
+  <data name="Autoships_formatted" xml:space="preserve">
+    <value>{0} Autoships</value>
+    <comment>Autoship List</comment>
+  </data>
+  <data name="BankAccountEndingIn" xml:space="preserve">
+    <value>Bank account ending in</value>
+    <comment>Checkout Review</comment>
+  </data>
+  <data name="BankAccountEndingIn_formatted" xml:space="preserve">
+    <value>Bank account ending in {0}</value>
+  </data>
+  <data name="BankAddress" xml:space="preserve">
+    <value>Bank Address</value>
+    <comment>Checkout Review</comment>
+  </data>
+  <data name="BankDraft" xml:space="preserve">
+    <value>Bank draft</value>
+  </data>
+  <data name="BiAnnual" xml:space="preserve">
+    <value>Bi-Annual</value>
+    <comment>Autoship List</comment>
+  </data>
+  <data name="BillingAddress" xml:space="preserve">
+    <value>Billing Address</value>
+    <comment>Checkout Review</comment>
+  </data>
+  <data name="BillingInformation" xml:space="preserve">
+    <value>Billing Information</value>
+    <comment>Checkout Review</comment>
+  </data>
+  <data name="BillingTo" xml:space="preserve">
+    <value>Billing to</value>
+    <comment>Autoship Invoice</comment>
+  </data>
+  <data name="BiMonthly" xml:space="preserve">
+    <value>Bi-Monthly</value>
+    <comment>Autoship List</comment>
+  </data>
+  <data name="BiWeekly" xml:space="preserve">
+    <value>Bi-Weekly</value>
+    <comment>Autoship List</comment>
+  </data>
+  <data name="BusinessCheckingAccount" xml:space="preserve">
+    <value>Business Checking Account</value>
+    <comment>Checkout Payment</comment>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CardsAccepted" xml:space="preserve">
+    <value>{0} accepts all American Express, Discover, MasterCard and Visa credit and debit cards.</value>
+    <comment>Checkout Payment</comment>
+  </data>
+  <data name="Change" xml:space="preserve">
+    <value>Change</value>
+    <comment>Checkout Review</comment>
+  </data>
+  <data name="ChangeItems" xml:space="preserve">
+    <value>Change Items</value>
+    <comment>Checkout Review</comment>
+  </data>
+  <data name="CheckingAccount" xml:space="preserve">
+    <value>Checking Account</value>
+    <comment>Checkout Payment</comment>
+  </data>
+  <data name="CheckingAccountEndingIn" xml:space="preserve">
+    <value>&lt;strong&gt;Checking Account&lt;/strong&gt; ending in</value>
+    <comment>Checkout Payment</comment>
+  </data>
+  <data name="ChooseAPaymentMethod" xml:space="preserve">
+    <value>Choose a payment method</value>
+    <comment>Checkout Payment</comment>
+  </data>
+  <data name="ChooseAPaymentOnFileConfirmationMessage" xml:space="preserve">
+    <value>Is the payment method you'd like to use displayed below? If so, click the corresponding
+                button. Or you can choose a new payment method.</value>
+    <comment>Checkout Payment</comment>
+  </data>
+  <data name="ChooseAShippingSpeed" xml:space="preserve">
+    <value>Choose a shipping speed</value>
+    <comment>Shipping Method</comment>
+  </data>
+  <data name="ChooseHowToSaveThisCard" xml:space="preserve">
+    <value>Choose how you want to save this card to your account.</value>
+    <comment>Autoship Checkout Payment</comment>
+  </data>
+  <data name="ChooseYourShippingOptions" xml:space="preserve">
+    <value>Choose your shipping options</value>
+    <comment>Shipping Method</comment>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="ClickShipToThisAddressWhenDone" xml:space="preserve">
+    <value>Be sure to click "Ship to this address" below when done.</value>
+    <comment>Shipping Address</comment>
+  </data>
+  <data name="ConfigureYourAutoship" xml:space="preserve">
+    <value>Configure your autoship</value>
+    <comment>Autoship Checkout Details</comment>
+  </data>
+  <data name="ConfirmYourAccountNumber" xml:space="preserve">
+    <value>Confirm you account number</value>
+    <comment>Checkout Payment</comment>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="CreateMyAutoship" xml:space="preserve">
+    <value>Create My Autoship</value>
+    <comment>Autoship List</comment>
+  </data>
+  <data name="CreateNewAutoship" xml:space="preserve">
+    <value>Create New Autoship</value>
+    <comment>Autoship List</comment>
+  </data>
+  <data name="CreditCardEndingIn_formatted" xml:space="preserve">
+    <value>Credit card ending in {0}</value>
+  </data>
+  <data name="CreditDebitCardEndingIn" xml:space="preserve">
+    <value>Credit/Debit card ending in</value>
+    <comment>Checkout Review</comment>
+  </data>
+  <data name="CreditDebitEndingIn" xml:space="preserve">
+    <value>&lt;strong&gt;Credit/Debit Card&lt;/strong&gt; ending in</value>
+    <comment>Checkout Payment</comment>
+  </data>
+  <data name="CreditOrDebitCards" xml:space="preserve">
+    <value>Credit or Debit Cards</value>
+    <comment>Checkout Payment</comment>
+  </data>
+  <data name="CurrentDate" xml:space="preserve">
+    <value>Current Date</value>
+    <comment>Autoship Invoice</comment>
+  </data>
+  <data name="CustomerNumber" xml:space="preserve">
+    <value>Customer #</value>
+    <comment>Order Invoice</comment>
+  </data>
+  <data name="CustomerToSendPayments" xml:space="preserve">
+    <value>Customer to send payments</value>
+    <comment>Autoship Invoice</comment>
+  </data>
+  <data name="CustomerToSendPaymentsBankDraft" xml:space="preserve">
+    <value>Customer to send payments via bank draft</value>
+    <comment>Autoship Invoice</comment>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DeleteAutoshipMessage" xml:space="preserve">
+    <value>&lt;b&gt;Deleting an autoship&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;Are you sure that you want to permanently delete your {0} autoship called '{1}'?</value>
+    <comment>Autoship List</comment>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Discount" xml:space="preserve">
+    <value>Discount</value>
+    <comment>Checkout Review</comment>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="EmailAddress" xml:space="preserve">
+    <value>Email Address</value>
+  </data>
+  <data name="EnterYourPaymentMethod" xml:space="preserve">
+    <value>Enter your payment method</value>
+    <comment>Checkout Payment</comment>
+  </data>
+  <data name="EnterYourShipAddress" xml:space="preserve">
+    <value>Enter your shipping address</value>
+    <comment>Shipping Address</comment>
+  </data>
+  <data name="EstimatedShipping" xml:space="preserve">
+    <value>Estimated Shipping</value>
+    <comment>Autoship Checkout Review</comment>
+  </data>
+  <data name="EstimatedShippingAndHandling" xml:space="preserve">
+    <value>Estimated Shipping &amp; Handling</value>
+    <comment>Autoship Invoice</comment>
+  </data>
+  <data name="EstimatedTaxes" xml:space="preserve">
+    <value>Estimated Taxes</value>
+    <comment>Autoship Checkout Review</comment>
+  </data>
+  <data name="EstimatedTotal" xml:space="preserve">
+    <value>Estimated Total</value>
+    <comment>Autoship Checkout Review</comment>
+  </data>
+  <data name="EveryFourWeeks" xml:space="preserve">
+    <value>Every four weeks</value>
+  </data>
+  <data name="EveryMonth" xml:space="preserve">
+    <value>Every month</value>
+  </data>
+  <data name="EveryOtherMonth" xml:space="preserve">
+    <value>Every other month</value>
+  </data>
+  <data name="EveryOtherWeek" xml:space="preserve">
+    <value>Every other week</value>
+  </data>
+  <data name="EveryWeek" xml:space="preserve">
+    <value>Every week</value>
+  </data>
+  <data name="ExpiresOn" xml:space="preserve">
+    <value>Expires on</value>
+    <comment>Checkout Payment</comment>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="FourTimesAYear" xml:space="preserve">
+    <value>Four times a year</value>
+  </data>
+  <data name="Frequency" xml:space="preserve">
+    <value>Frequency</value>
+    <comment>Autoship Invoice</comment>
+  </data>
+  <data name="FulfillmentCenter" xml:space="preserve">
+    <value>Fulfillment Center</value>
+    <comment>Order Invoice</comment>
+  </data>
+  <data name="GrandTotal" xml:space="preserve">
+    <value>Grand Total</value>
+    <comment>Order Invoice</comment>
+  </data>
+  <data name="HowOftenDoYouWantThisAutoship" xml:space="preserve">
+    <value>How often do you want to receive this autoship?</value>
+    <comment>Autoship Checkout Details</comment>
+  </data>
+  <data name="Invoice" xml:space="preserve">
+    <value>Invoice</value>
+    <comment>Order Invoice</comment>
+  </data>
+  <data name="InvoiceNumber" xml:space="preserve">
+    <value>Invoice #</value>
+    <comment>Order Invoice</comment>
+  </data>
+  <data name="Invoice_ThankYou" xml:space="preserve">
+    <value>Thank you for your business!</value>
+    <comment>Order Invoice</comment>
+  </data>
+  <data name="Invoice_ThankYouAutoship" xml:space="preserve">
+    <value>Thank you for your continued business!</value>
+    <comment>Autoship Invoice</comment>
+  </data>
+  <data name="Items" xml:space="preserve">
+    <value>Items</value>
+  </data>
+  <data name="LanguageCodePrefix" xml:space="preserve">
+    <value>es</value>
+    <comment>jQuery Validation Engine language prefix, used for pop up text localization</comment>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="LastRunDate" xml:space="preserve">
+    <value>Last Run Date</value>
+    <comment>Autoship Invoice</comment>
+  </data>
+  <data name="LineTotal" xml:space="preserve">
+    <value>Line Total</value>
+    <comment>Order Invoice</comment>
+  </data>
+  <data name="ManualPayments" xml:space="preserve">
+    <value>Manual payments</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>Month</value>
+  </data>
+  <data name="Monthly" xml:space="preserve">
+    <value>Monthly</value>
+    <comment>Autoship List</comment>
+  </data>
+  <data name="MyAutoships" xml:space="preserve">
+    <value>My Autoships</value>
+    <comment>Autoship List</comment>
+  </data>
+  <data name="NameAsItAppearsOnCard" xml:space="preserve">
+    <value>Name as it appears on your card</value>
+    <comment>Checkout Payment</comment>
+  </data>
+  <data name="NameAsItAppears_CheckingAccount" xml:space="preserve">
+    <value>Name as it appears on your checking account</value>
+    <comment>Checkout Payment</comment>
+  </data>
+  <data name="NameOnCardAccount" xml:space="preserve">
+    <value>Name on card/account</value>
+    <comment>Checkout Payment</comment>
+  </data>
+  <data name="NextProcessingDate" xml:space="preserve">
+    <value>Next processing date:</value>
+    <comment>Autoship Checkout Details</comment>
+  </data>
+  <data name="NextRunDate" xml:space="preserve">
+    <value>Next Run Date</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="NoAutoshipMessage" xml:space="preserve">
+    <value>You have not yet created your autoship.</value>
+    <comment>Autoship List</comment>
+  </data>
+  <data name="NoSpaces" xml:space="preserve">
+    <value>No spaces or special characters</value>
+    <comment>Checkout Payment</comment>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Notes</value>
+    <comment>Order Invoice</comment>
+  </data>
+  <data name="Note_AutoshipProcessingMessage" xml:space="preserve">
+    <value>Note: your processing date cannot be in the past.</value>
+    <comment>Autoship Checkout Details</comment>
+  </data>
+  <data name="NumbersOnly_NoSpecialChar" xml:space="preserve">
+    <value>Numbers only. No spaces or special characters.</value>
+    <comment>Checkout Payment</comment>
+  </data>
+  <data name="OnceAYear" xml:space="preserve">
+    <value>Once a year</value>
+  </data>
+  <data name="OrderPlacedConfirmationMessage" xml:space="preserve">
+    <value>Your order has been placed.</value>
+    <comment>Checkout Complete</comment>
+  </data>
+  <data name="OrderSummary" xml:space="preserve">
+    <value>Order Summary</value>
+    <comment>Checkout Review</comment>
+  </data>
+  <data name="OrderTotal" xml:space="preserve">
+    <value>Order Total</value>
+    <comment>Checkout Review</comment>
+  </data>
+  <data name="OrEnterNewAddress" xml:space="preserve">
+    <value>Or enter a new shipping address</value>
+    <comment>Shipping Address</comment>
+  </data>
+  <data name="OrSelectANewPayment" xml:space="preserve">
+    <value>Or select a new payment method</value>
+    <comment>Checkout Payment</comment>
+  </data>
+  <data name="Other" xml:space="preserve">
+    <value>Other</value>
+    <comment>Autoship List</comment>
+  </data>
+  <data name="PaymentMethod" xml:space="preserve">
+    <value>Payment Method</value>
+    <comment>Checkout Review</comment>
+  </data>
+  <data name="PersonalCheckingAccount" xml:space="preserve">
+    <value>Personal Checking Account</value>
+    <comment>Checkout Payment</comment>
+  </data>
+  <data name="PlaceYourOrder" xml:space="preserve">
+    <value>Place your order</value>
+    <comment>Checkout Review</comment>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Price</value>
+    <comment>Order Invoice</comment>
+  </data>
+  <data name="Primary" xml:space="preserve">
+    <value>Primary</value>
+  </data>
+  <data name="PrimaryCreditCardEndingIn" xml:space="preserve">
+    <value>Primary credit card on file ending in {0}&lt;br /&gt; Expires {1}/{2}</value>
+    <comment>Autoship Invoice</comment>
+  </data>
+  <data name="Quarterly" xml:space="preserve">
+    <value>Quarterly</value>
+    <comment>Autoship List</comment>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Remove</value>
+    <comment>Shopping Carts</comment>
+  </data>
+  <data name="ReviewYourOrder" xml:space="preserve">
+    <value>Review your order</value>
+    <comment>Checkout Review</comment>
+  </data>
+  <data name="SaveThisCardAsMy" xml:space="preserve">
+    <value>Save this card as my</value>
+    <comment>Autoship Checkout Payment</comment>
+  </data>
+  <data name="SaveYourAutoship" xml:space="preserve">
+    <value>Save your autoship</value>
+    <comment>Autoship Checkout Review</comment>
+  </data>
+  <data name="Secondary" xml:space="preserve">
+    <value>Secondary</value>
+    <comment>Autoship Checkout Payment</comment>
+  </data>
+  <data name="SecondaryCreditCardEndingIn" xml:space="preserve">
+    <value>Secondary credit card on file ending in {0}&lt;br /&gt; Expires {1}/{2}</value>
+    <comment>Autoship Invoice</comment>
+  </data>
+  <data name="Sh" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ShippedDate" xml:space="preserve">
+    <value>Shipped Date</value>
+    <comment>Order Invoice</comment>
+  </data>
+  <data name="Shipping" xml:space="preserve">
+    <value>Shipping</value>
+    <comment>Checkout Review</comment>
+  </data>
+  <data name="ShippingAddress" xml:space="preserve">
+    <value>Shipping Address</value>
+    <comment>Checkout Review</comment>
+  </data>
+  <data name="ShippingAddressOnFileConfirmationMessage" xml:space="preserve">
+    <value>Is the address you'd like to use displayed below? If so, click the corresponding
+                    "Ship to this address" button. Or you can enter a new shipping address.</value>
+    <comment>Shipping Address</comment>
+  </data>
+  <data name="ShippingAndHandling" xml:space="preserve">
+    <value>Shipping &amp; Handling</value>
+    <comment>Order Invoice</comment>
+  </data>
+  <data name="ShippingInformation" xml:space="preserve">
+    <value>Shipping Information</value>
+    <comment>Checkout Review</comment>
+  </data>
+  <data name="ShippingMethod" xml:space="preserve">
+    <value>Shipping Method</value>
+  </data>
+  <data name="ShippingOptions" xml:space="preserve">
+    <value>Shipping Options</value>
+    <comment>Checkout Review</comment>
+  </data>
+  <data name="ShipTo" xml:space="preserve">
+    <value>Ship To</value>
+  </data>
+  <data name="ShipVia" xml:space="preserve">
+    <value>Ship Via</value>
+    <comment>Order Invoice</comment>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>Source</value>
+    <comment>Order Invoice</comment>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+    <comment>Order Invoice</comment>
+  </data>
+  <data name="StreetAddress" xml:space="preserve">
+    <value>Street Address</value>
+  </data>
+  <data name="Tax" xml:space="preserve">
+    <value>Tax</value>
+    <comment>Order Invoice</comment>
+  </data>
+  <data name="Taxes" xml:space="preserve">
+    <value>Taxes</value>
+    <comment>Checkout Review</comment>
+  </data>
+  <data name="ThankYouForYourOrder" xml:space="preserve">
+    <value>Thank you for your order!</value>
+    <comment>Checkout Complete</comment>
+  </data>
+  <data name="TheCVCCodeFound" xml:space="preserve">
+    <value>The CVC code found on the back of your card.</value>
+    <comment>Checkout Payment</comment>
+  </data>
+  <data name="TheNameOfYourBank" xml:space="preserve">
+    <value>The name of your bank</value>
+    <comment>Checkout Payment</comment>
+  </data>
+  <data name="TodaysOrder" xml:space="preserve">
+    <value>Today's Order</value>
+    <comment>Checkout Review</comment>
+  </data>
+  <data name="TotalDue" xml:space="preserve">
+    <value>Total Due</value>
+    <comment>Order Invoice</comment>
+  </data>
+  <data name="TotalPaid" xml:space="preserve">
+    <value>Total Paid</value>
+    <comment>Order Invoice</comment>
+  </data>
+  <data name="Tracking" xml:space="preserve">
+    <value>Tracking</value>
+    <comment>Order Invoice</comment>
+  </data>
+  <data name="TwentyEightDay" xml:space="preserve">
+    <value>28-Day</value>
+    <comment>Autoship List</comment>
+  </data>
+  <data name="TwiceAYear" xml:space="preserve">
+    <value>Twice a year</value>
+  </data>
+  <data name="TypeOfBankAccount" xml:space="preserve">
+    <value>The type of bank account you wish to use.</value>
+    <comment>Checkout Payment</comment>
+  </data>
+  <data name="UnableToFindAutoship" xml:space="preserve">
+    <value>We were unable to find the autoship you requested. Please contact customer service for more information.</value>
+    <comment>Autoship Invoice</comment>
+  </data>
+  <data name="UnableToFindOrder_OrderInvoice" xml:space="preserve">
+    <value>We were unable to find the order you requested. Please contact customer service for more information.</value>
+    <comment>Order Invoice</comment>
+  </data>
+  <data name="Unit" xml:space="preserve">
+    <value>Unit</value>
+    <comment>Order Invoice</comment>
+  </data>
+  <data name="UseANewCard" xml:space="preserve">
+    <value>Use a new card</value>
+    <comment>Checkout Payment</comment>
+  </data>
+  <data name="UseANewCheckingAccount" xml:space="preserve">
+    <value>Use a new checking account</value>
+    <comment>Checkout Payment</comment>
+  </data>
+  <data name="UseMy_Card" xml:space="preserve">
+    <value>Use my {0} card</value>
+    <comment>Autoship Checkout Payment</comment>
+  </data>
+  <data name="UsePrimaryCard" xml:space="preserve">
+    <value>Use Primary Card</value>
+    <comment>Checkout Payment</comment>
+  </data>
+  <data name="UseSecondaryCard" xml:space="preserve">
+    <value>Use Secondary Card</value>
+    <comment>Checkout Payment</comment>
+  </data>
+  <data name="UseThisCard" xml:space="preserve">
+    <value>Use this card</value>
+    <comment>Checkout Payment</comment>
+  </data>
+  <data name="UseThisCheckingAccount" xml:space="preserve">
+    <value>Use this checking account</value>
+    <comment>Checkout Payment</comment>
+  </data>
+  <data name="UseYourCheckingAccount" xml:space="preserve">
+    <value>Use your checking account to pay for your order.</value>
+    <comment>Checkout Payment</comment>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="ViewInvoice" xml:space="preserve">
+    <value>View Invoice</value>
+    <comment>Checkout Complete</comment>
+  </data>
+  <data name="WalletAccountEndingIn_formatted" xml:space="preserve">
+    <value>Wallet account ending in {0}</value>
+  </data>
+  <data name="Weekly" xml:space="preserve">
+    <value>Weekly</value>
+    <comment>Autoship List</comment>
+  </data>
+  <data name="WhenShouldYourAutoshipStart" xml:space="preserve">
+    <value>When should your autoship start?</value>
+    <comment>Autoship Checkout Details</comment>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="YourAccountNumber" xml:space="preserve">
+    <value>Your account number</value>
+    <comment>Checkout Payment</comment>
+  </data>
+  <data name="YourAccountType" xml:space="preserve">
+    <value>Your account type</value>
+    <comment>Checkout Payment</comment>
+  </data>
+  <data name="YourAddress" xml:space="preserve">
+    <value>Your address</value>
+  </data>
+  <data name="YourAutoshipFrequency" xml:space="preserve">
+    <value>Your autoship frequency</value>
+    <comment>Autoship Checkout Details</comment>
+  </data>
+  <data name="YourBank" xml:space="preserve">
+    <value>Your bank</value>
+    <comment>Checkout Payment</comment>
+  </data>
+  <data name="YourBanksAddress" xml:space="preserve">
+    <value>Your bank's address</value>
+    <comment>Checkout Payment</comment>
+  </data>
+  <data name="YourBillingAddress" xml:space="preserve">
+    <value>Your billing address</value>
+    <comment>Checkout Payment</comment>
+  </data>
+  <data name="YourCardNumber" xml:space="preserve">
+    <value>Your card number</value>
+    <comment>Checkout Payment</comment>
+  </data>
+  <data name="YourEmail" xml:space="preserve">
+    <value>Your email</value>
+  </data>
+  <data name="YourExpiDate" xml:space="preserve">
+    <value>Your expiration date</value>
+    <comment>Checkout Payment</comment>
+  </data>
+  <data name="YourName" xml:space="preserve">
+    <value>Your name</value>
+  </data>
+  <data name="YourPhoneNumber" xml:space="preserve">
+    <value>Your phone number</value>
+  </data>
+  <data name="YourRoutingNumber" xml:space="preserve">
+    <value>Your routing number</value>
+    <comment>Checkout Payment</comment>
+  </data>
+  <data name="YourSecurityCode" xml:space="preserve">
+    <value>Your security code</value>
+    <comment>Checkout Payment</comment>
+  </data>
+  <data name="YourStoredPaymentMethods" xml:space="preserve">
+    <value>Your stored payment methods</value>
+    <comment>Checkout Payment</comment>
+  </data>
+  <data name="ZipCode" xml:space="preserve">
+    <value>Zip Code</value>
+  </data>
+</root>

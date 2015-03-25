@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Public.master.cs" Inherits="MasterPages_Public" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8">
+    <title></title>
+
+    <link href="../Assets/Styles/site.css" rel="stylesheet" />
+    <link href="../Assets/Plugins/twitter.bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="../Assets/Plugins/twitter.bootstrap/css/bootstrap-responsive.css" rel="stylesheet" />
+
+
+    <script src="Assets/Scripts/jquery.min.js"></script>
+    <script src="Assets/Plugins/twitter.bootstrap/js/bootstrap.js"></script>
+    <!--[if lt IE 9]>  
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
+    <![endif]-->
+
+    <asp:ContentPlaceHolder ID="Head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ContentPlaceHolder ID="Content" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

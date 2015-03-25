@@ -1,0 +1,23 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="InvoiceMaster" CodeFile="Invoice.Master.cs" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="x-ua-compatible" content="IE=edge" >
+    <title>
+        <%=GlobalSettings.Company.Name %></title>
+    <link href="../Assets/Styles/invoice.min.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="Head" runat="server" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="printwrapper">
+        <div id="printcontentwrapper">
+            <div id="pagecontentwrapper">
+                <asp:ContentPlaceHolder ID="Content" runat="server" />
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

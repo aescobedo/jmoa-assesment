@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="MasterPages_Site" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title></title>
+
+    <link href="../Assets/Styles/site.min.css" rel="stylesheet" />
+    <link href="../Assets/Styles/themes.min.css" rel="stylesheet" />
+    <link href="../Assets/Plugins/twitter.bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="../Assets/Icons/glyphicons/glyphicons.css" rel="stylesheet" />
+
+    <script src="Assets/Scripts/jquery.min.js"></script>
+    <script src="Assets/Plugins/jquery-ui/js/jquery-ui.custom.min.js"></script>
+    <script src="Assets/Plugins/twitter.bootstrap/js/bootstrap.js"></script>
+    <!--[if lt IE 9]>  
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
+    <![endif]-->
+
+    <script>
+        $(function () {
+            $('[title]:not(.btn)').tooltip();
+                        
+        });
+    </script>
+    <style>
+        #lstLanguage { float: right; }
+    </style>
+    <asp:ContentPlaceHolder ID="Head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="sitewrapper">
+        <div id="sitenavigation">
+            <div class="innerwrapper">
+                <img src="Assets/Images/imgLogo.png" id="sitelogo" alt="<%=GlobalSettings.Company.Name %>" title="<%=GlobalSettings.Company.Name %>" />
+                <ul>
+                    <li data-key="home"><i class="glyphicons-icon white dashboard"></i><a href="Home.aspx"><%=Identity.Current.FirstName + " " + Identity.Current.LastName %></a></li>
+                    <li data-key="messages"><i class="glyphicons-icon white envelope"></i><a href="Messages.aspx"><%=Resources.Navigation.Messages %></a> <%=UnreadMailCountDisplay %></li>
+                    <li data-key="events"><i class="glyphicons-icon white calendar"></i><a href="Calendar.aspx"><%=Resources.Navigation.Events %></a></li>
+                    <li data-key="organization"><i class="glyphicons-icon white group"></i><a href="OrganizationExplorer.aspx"><%=Resources.Navigation.Organization %></a></li>
+                    <li data-key="commissions"><i class="glyphicons-icon white usd"></i><a href="CommissionsPortal.aspx"><%=Resources.Navigation.Commissions %></a></li>
+                    <li data-key="ranks"><i class="glyphicons-icon white podium"></i><a href="RankAdvancement.aspx"><%=Resources.Navigation.Ranks %></a></li>
+                    <li data-key="orders"><i class="glyphicons-icon white shopping_cart"></i><a href="ShoppingProductList.aspx"><%=Resources.Navigation.Orders %></a></li>
+                    <li data-key="autoships"><i class="glyphicons-icon white roundabout"></i><a href="AutoshipList.aspx"><%=Resources.Navigation.Autoships %></a></li>
+                    <!--<li data-key="subscriptions"><i class="glyphicons-icon white keys"></i><a href="SubscriptionsPortal.aspx"><%=Resources.Navigation.Subscriptions %></a></li>-->
+                    <li data-key="myaccount"><i class="glyphicons-icon white settings"></i><a href="PersonalSettings.aspx"><%=Resources.Navigation.MyAccount %></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="sitecontent">
+
+            <div class="innerwrapper">
+                <asp:DropDownList runat="server" ID="lstLanguage" OnSelectedIndexChanged="SetLanguage" AutoPostBack="true"></asp:DropDownList>
+                <div class="clear"></div>
+                <asp:ContentPlaceHolder ID="Content" runat="server" />
+            </div>
+        </div>
+    </div>
+    </form>
+
+    <script src="Assets/Scripts/exigo.sitetheme.js"></script>
+
+</body>
+</html>
