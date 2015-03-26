@@ -1,6 +1,6 @@
-﻿using Exigo.OData;
+﻿using Exigo.WebService;
 using Exigo.RankQualificationGoals;
-using Exigo.WebService;
+using Exigo.OData;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -51,6 +51,10 @@ public partial class Home : System.Web.UI.Page
                 default:
                     return;
             } 
+        }
+        if (Identity.Current.IsAuthenticated)
+        {
+            Response.Write("Login Successful!");
         }
         base.Render(writer);
     }

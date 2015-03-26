@@ -90,9 +90,23 @@ public class IdentityAuthenticationService : IAuthenticationService
     public bool CreateFormsAuthenticationTicket(int customerID)
     {
         var command = new SqlHelper();
-        //ToDo: Create a SQL Query to retrieve the customer information.
-        DataRow row = null;
-        
+
+        var row = command.GetRow(@"
+                SELECT 
+                    FirstName = c.FirstName,
+                    LastName = c.LastName,
+                    Company = c.Company,
+                    LanguageID = c.LanguageID,
+                    CustomerTypeID = c.CustomerTypeID,
+                    CustomerStatusID = c.CustomerStatusID,
+                    DefaultWarehouseID = c.DefaultWarehouseID,
+                    CurrencyCode = c.CurrencyCode,
+                    CreatedDate = c.CreatedDate
+                FROM
+	                Customers c
+                WHERE
+	                c.CustomerID = {0}
+            ", customerID);        
         
         DateTime now = DateTime.UtcNow;
       

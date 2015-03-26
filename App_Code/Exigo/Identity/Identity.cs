@@ -7,7 +7,7 @@ using System.Web.Security;
 
 //ToDo: Fix the Identity implementation
 [Serializable]
-public class Identity
+public class Identity : IIdentity
 {
     public static Identity Current
     {
@@ -44,6 +44,11 @@ public class Identity
         JoinedDate = DateTime.Parse(GlobalUtilities.Coalesce(a[10].ToString(), DateTime.Now.ToString()));
 
         Expires = ticket.Expiration.ToUniversalTime();
+
+        if (!ticket.Expired)
+            IsAuthenticated = true;
+        else
+            IsAuthenticated = false;
     }
 
     // Determine the culture codes
@@ -131,4 +136,8 @@ public class Identity
             return null;
         }
     }
+
+    public string AuthenticationType { get; private set; }
+
+    public bool IsAuthenticated { get; private set; }
 }
